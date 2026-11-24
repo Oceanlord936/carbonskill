@@ -1,0 +1,35 @@
+/* TEST ONLY: the layout knobs box (LayoutKnobs.tsx) , fixed at the bottom centre , Carbon tokens */
+.status-size-tester {
+  position: fixed;
+  z-index: 9000;
+  inset-block-end: 1rem;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--cds-layer-01);
+  border: 1px dashed var(--cds-border-strong-01);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.status-size-tester-knob {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-inline-end: 0.75rem;
+  border-inline-end: 1px solid var(--cds-border-subtle-01);
+}
+
+.status-size-tester-value {
+  min-inline-size: 3.5em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status-size-tester-note {
+  color: var(--cds-text-secondary);
+}
